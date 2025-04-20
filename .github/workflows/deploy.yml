@@ -24,6 +24,10 @@ jobs:
       - name: Build  # 執行 npm run build 來編譯 Vue 專案
         run: npm run build
 
+      - name: Check dist folder
+        run: ls -l ./dist
+        
+
       - name: Deploy to GitHub Pages  # 部署到 GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
