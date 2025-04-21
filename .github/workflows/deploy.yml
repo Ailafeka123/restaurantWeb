@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js  # 設定 Node.js 環境
         uses: actions/setup-node@v3
         with:
-          node-version: '22'  # 你可以根據需求更改 Node.js 版本
+          node-version: '22'  # 可以根據需求更改 Node.js 版本 
 
       - name: Install dependencies  # 安裝專案的依賴
         run: npm install
