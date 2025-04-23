@@ -1,37 +1,9 @@
 # restaurantWeb
-vue製作餐廳網站
+vue製作餐廳網站(規劃中)
 
-
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+##目前規劃(暫定)
+- 製作一頁式網站，選單點擊是轉跳至對應標題
+- 分別為:關於我們、最新消息、餐單、位置、預約
+- 最新消息為模擬，暫時不規劃點擊(或是後續轉為SPA式網站)
+- 預約內容為:姓名、電話、時間、預約人數、備註(預計配合google表單)
+- 位置為google地圖顯示
