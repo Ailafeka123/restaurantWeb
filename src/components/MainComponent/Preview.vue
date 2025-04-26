@@ -1,33 +1,55 @@
 <script setup>
+    import { onMounted,ref } from "vue";
     import preview1 from "@/assets/preview1.jpg"
+    const userAgent = navigator.userAgent;
+    console.log(userAgent)
+    onMounted(() => {
+        console.log(navigator.userAgent);
+    });
+
 </script>
 <template>
-    <div class="previewDiv" :style="{backgroundImage:` linear-gradient(to right, rgba(132, 25, 34,0), rgba(132, 25, 34,0.7)),url(${preview1})`}">
-        <!-- <img :src="preview1" alt=""> -->
-        <!-- linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.1)), -->
-        <!-- <div class="previewImg1" ></div> -->
+    <div id="about" class="previewDiv" :style="{backgroundImage:` linear-gradient(to right, rgba(132, 25, 34,0), rgba(132, 25, 34,0.7)),url(${preview1})`}">
+        <div class="perviewTextdDiv">
+            <h2>隨便餐廳</h2>
+            <p>本餐廳的特色是當顧客不知道吃什麼的時候，可以採用隨機的方式幫顧客準備好吃的料理。</p>
+        </div>
     </div>
 </template>
 <style>
 .previewDiv{
+
+    scroll-margin-top: var(--header-height);
     margin-top: var(--header-height);
     height: max(500px,100vh);
     background-position:top;
     background-size: 100%;
     background-repeat: no-repeat;
-    /* display: flex;
-    align-items: start;
-    justify-content: start; */
     overflow: hidden;
-    /* background-color: #834f4f; */
+    position: relative;
+}
+.perviewTextdDiv{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap:7rem;
+    padding: 3rem;
 }
 
-
-.previewDiv img{
-    height: 100%;   
-    width: 30%;
-    overflow: hidden;
-    object-fit:cover;
-    object-position: center;
+@media (max-width:768px) {
+    .previewDiv{
+        height: 100vh;;
+        background-size: auto 100%;
+    }
+    .perviewTextdDiv{
+        width: 100%;
+        align-items: center;
+        justify-content: start;
+    }
 }
 </style>

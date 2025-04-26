@@ -14,17 +14,22 @@
   font-weight: normal;
 }
 
-body{
+html,body{
     margin:0;
     padding: 0;
     color:var(--text-color);
     background-color: var(--background-color);
+    font-size: clamp(16px,1.5vw,20px);
+    scroll-behavior: smooth;
+    transition: all 1s;
 }
-
+a{
+    color: var(--text-color);
+    text-decoration: none;
+}
 ul li{
     list-style: none;
 }
-
 header{
     display: flex;
     align-items: center;
@@ -35,14 +40,9 @@ header{
     height: var(--header-height);
     width: 100%;
     background-color: var(--header-color);
+    z-index: 999;
 }
-.headerNav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
+
 
 main{
     width: 100%;

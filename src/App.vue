@@ -1,6 +1,7 @@
 <script setup>
   import HeaderNavbar from './components/HeaderComponents/HeaderNavbar.vue';
   import Preview from './components/MainComponent/Preview.vue';
+  import News from './components/MainComponent/News.vue';
 </script>
 
 <template>
@@ -13,6 +14,7 @@
 
   <main>
     <Preview/>
+    <News/>
   </main>
 </template>
 
