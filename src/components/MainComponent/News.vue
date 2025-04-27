@@ -8,7 +8,7 @@
         <div class="NewsCardDiv">
             <div class="NewsCards" >
                 <div class="NewsImgDiv">
-                    <img class="NewsImg" :src="New1" alt="新消息圖片">
+                    <img class="NewsImg" loading="lazy" :src="New1" alt="新消息圖片">
                 </div>
                 <div class="NewsCardTextDiv">
                     <h3>開幕優惠</h3>
@@ -23,7 +23,7 @@
 
             <div class="NewsCards">
                 <div class="NewsImgDiv">
-                    <img class="NewsImg" :src="New2" alt="新消息圖片">
+                    <img class="NewsImg" loading="lazy" :src="New2" alt="新消息圖片">
                 </div>
                 <div class="NewsCardTextDiv">
                     <h3>開幕大特價</h3>
