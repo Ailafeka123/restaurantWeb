@@ -3,9 +3,6 @@
     import preview1 from "@/assets/preview1.jpg"
     const userAgent = navigator.userAgent;
     console.log(userAgent)
-    onMounted(() => {
-        console.log(navigator.userAgent);
-    });
 
 </script>
 <template>
@@ -18,12 +15,11 @@
 </template>
 <style>
 .previewDiv{
-
-    scroll-margin-top: var(--header-height);
+    width: 100%;
     margin-top: var(--header-height);
     height: max(500px,100vh);
+    background-size: cover;
     background-position:top;
-    background-size: 100%;
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
@@ -43,8 +39,9 @@
 
 @media (max-width:768px) {
     .previewDiv{
-        height: 100vh;;
+        height: 100vh;
         background-size: auto 100%;
+        margin-top: 0;
     }
     .perviewTextdDiv{
         width: 100%;

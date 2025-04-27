@@ -30,20 +30,4 @@ a{
 ul li{
     list-style: none;
 }
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: var(--header-height);
-    width: 100%;
-    background-color: var(--header-color);
-    z-index: 999;
-}
 
-
-main{
-    width: 100%;
-}

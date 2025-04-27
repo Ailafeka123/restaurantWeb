@@ -1,17 +1,19 @@
 <script setup>
-    import New1 from '@/assets/new1.jpg'
-    import New2 from '@/assets/new2.jpg'
+    import New1 from '@/assets/new1.jpg?format=webp&w=500'
+    import New2 from '@/assets/new2.jpg?format=webp&w=500'
 </script>
 <template>
     <div id="News" class="News" style="scroll-margin-top: var(100px);" >
         <h2>最新消息</h2>
         <div class="NewsCardDiv">
             <div class="NewsCards" >
-                <img :src="New1" alt="">
+                <div class="NewsImgDiv">
+                    <img class="NewsImg" :src="New1" alt="新消息圖片">
+                </div>
                 <div class="NewsCardTextDiv">
                     <h3>開幕優惠</h3>
                     <p class="NewCardTextContent">
-                        為了慶祝開幕，本餐廳將無限期延長開幕的時間(不會開店)。
+                        為了慶祝開幕，本餐廳將無限期延長開幕的時間(不會開店)。  
                     </p>
                     <div>
                         2025/04/26
@@ -20,7 +22,9 @@
             </div>
 
             <div class="NewsCards">
-                <img :src="New2" alt="">
+                <div class="NewsImgDiv">
+                    <img class="NewsImg" :src="New2" alt="新消息圖片">
+                </div>
                 <div class="NewsCardTextDiv">
                     <h3>開幕大特價</h3>
                     <p class="NewCardTextContent">
@@ -36,14 +40,14 @@
 </template>
 <style>
     .News{
-        padding: 80px 3rem 3rem 3rem ;
+        padding: 3rem;
         height: 100vh;
-        width: 100%;
+        width: 80%;
         overflow: hidden;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: start;
+        justify-content: center;
         gap: 3rem;
         
     }
@@ -57,19 +61,25 @@
         flex-direction: column;
         align-items: center;
         justify-content: start;
-        width: 50%;
+        width: min(50%,500px);
         height: 100%;
         overflow: hidden;
         background-color: var(--header-color);
     }
-    .NewsCards img{
-        object-fit:cover;
-        object-position: center;
+    .NewsImgDiv {
         width: 100%;
         height: 50%;
+        overflow: hidden;
         transition: all 0.5s;
     }
-    .NewsCards:hover img{
+    .NewsImg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: all 0.5s
+    }
+    .NewsCards:hover .NewsImg{
         transform: scale(1.1);
         opacity: 0.5;
     }
@@ -93,9 +103,10 @@
     }
     @media (max-width:768px) {
         .News{
+            width: 100%;
             flex-direction: row;
             gap: 1rem;
-            padding: 0.5rem;
+            padding:0.5rem;
         }
         .NewsCardDiv{
             flex-direction: column;
@@ -107,7 +118,7 @@
             height: 50%;
         
         }
-        .NewsCards img{
+        .NewsImgDiv{
             height: 100%;
             width: 100%;
             opacity: 0.8;
