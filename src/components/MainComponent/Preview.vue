@@ -17,7 +17,7 @@
 .previewDiv{
     width: 100%;
     margin-top: var(--header-height);
-    height: max(500px,100vh);
+    height: min(1000px,100vh);
     background-size: cover;
     background-position:top;
     background-repeat: no-repeat;

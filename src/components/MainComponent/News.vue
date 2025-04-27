@@ -41,7 +41,7 @@
 <style>
     .News{
         padding: 3rem;
-        height: 100vh;
+        height: min(1000px,100vh);
         width: 80%;
         overflow: hidden;
         display: flex;
