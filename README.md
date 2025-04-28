@@ -12,4 +12,6 @@ vue製作餐廳網站(規劃中)
 ## 目前進度
 - 關於我們 最新消息 :製作完成
 - loading的動畫效果與退場
-- menu分為手機板與電腦版 再載入時藉由window.innerWidth去判定
+- menu分為手機板與電腦版，再載入時藉由window.innerWidth去判定
+- 菜單使用table去組成，使用onMounted配合watch模擬後台讀取資料
+- map的部分使用googleMap，配合google給予的API(IP限制)
