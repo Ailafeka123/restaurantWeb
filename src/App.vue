@@ -5,6 +5,7 @@
   import Preview from './components/MainComponent/Preview.vue';
   import News from './components/MainComponent/News.vue';
   import MenuList from './components/MainComponent/MenuList.vue';
+  import MapIfram from './components/MainComponent/Map.vue';
 
   import { ref,onMounted} from 'vue';
   //loading
@@ -18,9 +19,6 @@
       LoadingState.value = false
     },1000)
   })
-  // window.onload = () =>{
-    
-  // }
   //loading End
   
 </script>
@@ -32,6 +30,7 @@
     <Preview/>
     <News />
     <MenuList />
+    <MapIfram />
   </main>
 </template>
 

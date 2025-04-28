@@ -88,7 +88,7 @@
                 <li><a  href="#">關於我們</a></li>
                 <li><a @click="CloseHeader" href="#News">最新消息</a></li>
                 <li><a @click="CloseHeader" href="#menuList">菜單</a></li>
-                <li>位置</li>
+                <li><a @click="CloseHeader" href="#googleMap">位置</a></li>
                 <li>預約</li>
             </ul>
 
@@ -103,7 +103,7 @@
                 <li><a href="#" @click="MenuItemClick">關於我們</a></li>
                 <li><a href="#News" @click="MenuItemClick">最新消息</a></li>
                 <li><a href="#menuList" @click="MenuItemClick">菜單</a></li>
-                <li>位置</li>
+                <li><a href="#googleMap" @click="MenuItemClick">位置</a></li>
                 <li>預約</li>
             </ul>
         </nav>

@@ -32,9 +32,7 @@
                     price1:MenuList.value[i].price
                 })
             }
-            
         }
-        console.log(showList.value)
     })
 </script>
 <template>
@@ -77,9 +75,6 @@
         height: 80%;
         border: 2px solid var(--text-color);
         border-collapse: collapse;
-        border-radius: 8%;
-        /* table-layout:20% 30%; */
-        
     }
     tr, td{
         text-align: center;
