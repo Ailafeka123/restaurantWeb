@@ -1,7 +1,6 @@
 <script setup>
     import New1 from '@/assets/new1.jpg?format=webp&w=500'
     import New2 from '@/assets/new2.jpg?format=webp&w=500'
-    import { ref, onMounted } from 'vue';
 </script>
 <template>
     <div id="News" class="News" style="scroll-margin-top: var(100px);" >
@@ -9,7 +8,7 @@
         <div class="NewsCardDiv">
             <div class="NewsCards" >
                 <div class="NewsImgDiv">
-                    <img class="NewsImg" loading="lazy" v-lazy="New1" alt="新消息圖片">
+                    <img class="NewsImg" loading="lazy" :src="New1" alt="新消息圖片">
                 </div>
                 <div class="NewsCardTextDiv">
                     <h3>開幕優惠</h3>
@@ -24,7 +23,7 @@
 
             <div class="NewsCards">
                 <div class="NewsImgDiv">
-                    <img class="NewsImg" loading="lazy" v-lazy="New2" alt="新消息圖片">
+                    <img class="NewsImg" loading="lazy" :src="New2" alt="新消息圖片">
                 </div>
                 <div class="NewsCardTextDiv">
                     <h3>開幕大特價</h3>
@@ -54,8 +53,6 @@
     }
     .NewsCardDiv{
         display: flex;
-        align-items: center;
-        justify-content: center;
         height: 100%;
         gap:2rem;
     }
