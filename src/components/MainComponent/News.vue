@@ -1,7 +1,6 @@
 <script setup>
     import New1 from '@/assets/new1.jpg?format=webp&w=500'
     import New2 from '@/assets/new2.jpg?format=webp&w=500'
-    import { ref, onMounted } from 'vue';
 </script>
 <template>
     <div id="News" class="News" style="scroll-margin-top: var(100px);" >
