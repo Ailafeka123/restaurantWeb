@@ -6,18 +6,21 @@
   import News from './components/MainComponent/News.vue';
   import MenuList from './components/MainComponent/MenuList.vue';
 
-  import { ref} from 'vue';
+  import { ref,onMounted} from 'vue';
   //loading
   const LoadingState = ref(true);
   const LoadingClass = ref("LoadingDiv")
-  window.onload = () =>{
+  onMounted(()=>{
     setTimeout(()=>{
       LoadingClass.value = "LoadingDiv LoadingDone";
     },100)
     setTimeout(()=>{
       LoadingState.value = false
     },1000)
-  }
+  })
+  // window.onload = () =>{
+    
+  // }
   //loading End
   
 </script>
