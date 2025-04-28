@@ -1,6 +1,4 @@
 <script setup>
-  import VueLazyload from 'vue-lazyload';
-
   import Loading from './components/LoadingComponent/Loading.vue';
 
   import HeaderNavbar from './components/HeaderComponents/HeaderNavbar.vue';

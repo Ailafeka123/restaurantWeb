@@ -44,7 +44,7 @@
             headerClass.value = "header";
             watch(scrollY,()=>{
                 if(moveB){
-                    if(scrollY > "80px" && Move.value === "down"){
+                    if(scrollY > "200px" && Move.value === "down"){
                         headerClass.value = "header header-close"
                     }else{
                         headerClass.value = "header"
