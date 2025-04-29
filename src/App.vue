@@ -6,6 +6,9 @@
   import News from './components/MainComponent/News.vue';
   import MenuList from './components/MainComponent/MenuList.vue';
   import MapIfram from './components/MainComponent/Map.vue';
+  import reserve from './components/MainComponent/reserve.vue';
+
+  import FooterComponent from './components/FooterComponents/Footer.vue';
 
   import { ref,onMounted} from 'vue';
   //loading
@@ -31,7 +34,9 @@
     <News />
     <MenuList />
     <MapIfram />
+    <reserve />
   </main>
+  <FooterComponent />
 </template>
 
 <style>
@@ -41,9 +46,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  @media (max-width:768px) {
-    
   }
 </style>
 

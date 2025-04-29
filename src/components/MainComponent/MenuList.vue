@@ -91,4 +91,9 @@
         width: 20%;
         background-color: #b44a4a;
     }
+    @media (max-width:768px){
+        .menuTable{
+            width: 95%;
+        }
+    }
 </style>

@@ -89,7 +89,7 @@
                 <li><a @click="CloseHeader" href="#News">最新消息</a></li>
                 <li><a @click="CloseHeader" href="#menuList">菜單</a></li>
                 <li><a @click="CloseHeader" href="#googleMap">位置</a></li>
-                <li>預約</li>
+                <li><a @click="CloseHeader" href="#reserve">預約</a></li>
             </ul>
 
             <ul class="headerNavPhone" v-else >
@@ -104,7 +104,7 @@
                 <li><a href="#News" @click="MenuItemClick">最新消息</a></li>
                 <li><a href="#menuList" @click="MenuItemClick">菜單</a></li>
                 <li><a href="#googleMap" @click="MenuItemClick">位置</a></li>
-                <li>預約</li>
+                <li><a href="#reserve"@click="MenuItemClick">預約</a></li>
             </ul>
         </nav>
     </header>
