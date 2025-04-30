@@ -170,8 +170,8 @@
         width: 100%;
     }
     .headerNavPhone li{
-        border: 4px solid black;
-        border-width: 0 0 4px 0;
+        width: 100%;
+        
     }
     .closePhoneMenu{
         display: flex;
@@ -183,6 +183,12 @@
         font-size: 10vw;
         background-color: var(--header-color);
         border-width: 0 !important;
+    }
+    li a{
+        display: block;
+        width: 100%;
+        text-decoration: underline;
+        text-decoration-color:white;
     }
     .ClosePhoneMunuButton{
         position: relative;

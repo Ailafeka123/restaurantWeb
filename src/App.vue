@@ -9,7 +9,8 @@
   import reserve from './components/MainComponent/reserve.vue';
 
   import FooterComponent from './components/FooterComponents/Footer.vue';
-
+  
+  import 'flatpickr/dist/flatpickr.css'
   import { ref,onMounted} from 'vue';
   //loading
   const LoadingState = ref(true);

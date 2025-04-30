@@ -79,17 +79,17 @@
     tr, td{
         text-align: center;
         gap: 1rem;
-        background-color: #832525;
+        background-color: var(--color-2 );
         border: 2px solid var(--text-color);
         border-width: 1px 0;
     }
     th:nth-child(even){
         width: 20%;
-        background-color: #b44a4a;
+        background-color: var(--color-1);
     }
     td:nth-child(even){
         width: 20%;
-        background-color: #b44a4a;
+        background-color: var(--color-1); 
     }
     @media (max-width:768px){
         .menuTable{
