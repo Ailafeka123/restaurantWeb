@@ -29,7 +29,7 @@
         })
         // 建立訊息視窗（InfoWindow）
         const infoWindow = new google.maps.InfoWindow({
-            content: "<a style='color:black' href='https://maps.app.goo.gl/AxNZAgazbKVFoAbn7'><h3>隨便餐廳</h3><p style='color:black'>這是測試用位置</p><a>"
+            content: "<a style='color:black' href='https://maps.app.goo.gl/AxNZAgazbKVFoAbn7'><h3>隨便餐廳</h3><p style='color:black'>點擊前往測試用位置</p><a>"
         })
         // 當標記被點擊時顯示訊息視窗
         marker.addListener("click", () => {
