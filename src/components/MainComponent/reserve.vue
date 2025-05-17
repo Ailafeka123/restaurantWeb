@@ -164,9 +164,10 @@ import flatPickr from 'vue-flatpickr-component';
         height: min(100vh,1000px);
         gap: 2rem;
     }
+    
     .reserveList{
-        width: 80%;
-        height: 80%;
+        width: 100%;
+        height: 100%;
     }
     .reserveGrid{
         display: grid;
@@ -182,7 +183,7 @@ import flatPickr from 'vue-flatpickr-component';
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        width: 90%;
+        width: 100%;
     }
     .reserveButtonDiv button{
         width: 40%;
@@ -249,7 +250,11 @@ import flatPickr from 'vue-flatpickr-component';
         color: var(--text-color);
     }
 
-
+    @media(min-width:768px){
+        .reserveDiv{
+            width: 50%;
+        }
+    }
     @media (max-width:768px){
         .reserveGrid{
             grid-template-columns: minmax(0,1fr);

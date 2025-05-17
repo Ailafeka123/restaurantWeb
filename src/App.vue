@@ -34,8 +34,11 @@
     <Preview/>
     <News />
     <MenuList />
-    <MapIfram />
-    <reserve />
+    <div class="mapAndReserve">
+      <MapIfram />
+      <reserve />
+
+    </div>
   </main>
   <FooterComponent />
 </template>
@@ -47,6 +50,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .mapAndReserve{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    padding:3rem 0;
+    gap: 1rem;
+    
+  }
+  @media (min-width:768px){
+    .mapAndReserve{
+      flex-direction: row;
+      min-height: 500px;
+    }
   }
 </style>
 
