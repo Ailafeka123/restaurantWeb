@@ -25,7 +25,7 @@
             title: "這是餐廳位置(假的)", // 當使用者滑鼠移到標記上會顯示的文字
         })
         const infoWindow = new google.maps.InfoWindow({
-            content: "<a style='color:black' href='https://maps.app.goo.gl/AxNZAgazbKVFoAbn7'><h3>隨便餐廳</h3><p style='color:black'>點擊前往測試用位置</p><a>"
+            content: "<a style='color:black' href='https://maps.app.goo.gl/AxNZAgazbKVFoAbn7' target='_blank'><h3>隨便餐廳</h3><p style='color:#1a73e8'>在google地圖上查看</p></a>"
         })
         // 當標記被點擊時顯示訊息視窗
         marker.addListener("click", () => {
@@ -36,8 +36,14 @@
 <template>
     <div id="googleMap" class="mapIfram">
         <h2>位置</h2>
-        <div id="map" class="googleMapDIv" style="width: 100%;"></div>
-        <!-- <a class="MapButton" href='https://maps.app.goo.gl/AxNZAgazbKVFoAbn7'>前往地圖</a> -->
+        <div class="googleMapDiv">
+            <div id="map" class="googleMapDIv"></div>
+            <div class="googleHead">
+                <p style="font-size: 20px; white-space: nowrap;">隨便餐廳</p>
+                <p style="font-size: 16px; color: #5b5b5b; white-space: nowrap;">淡水河裡</p>
+                <a href="https://maps.app.goo.gl/AxNZAgazbKVFoAbn7" target="_blank"><p style="color: #1a73e8; white-space: nowrap;" >詳細資料</p></a>
+            </div>
+        </div>
     </div>
 </template>
 <style>
@@ -52,14 +58,37 @@
         padding:0;
         
     }
-    .googleMapDIv{
+    .googleMapDiv{
+        position: relative;
         width: 100%;
         height: 100%;
         color: black;
     }
+    .googleMapDIv{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .googleHead{
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 50%;
+        height: 20%;
+        padding:10px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        background-color: #fff;
+        border: 1px solid rgb(63, 62, 62);
+        box-shadow: 1px 1px 1px rgb(63, 62, 62);
+        overflow: hidden;
+    }
     @media (min-width:768px){
         .mapIfram{
             width: 50%;
+            height: 600px;
             padding:0 1rem;
         }
     }
